@@ -6,6 +6,7 @@ issue=False
 finalName=""
 finalday=0
 while True:
+    print()
     print("MENU ")
     print(" 1 login ")
     print(" 2 Book issue ")
@@ -14,6 +15,7 @@ while True:
     cohice=int(input("enter choice "))
     match cohice:
         case 1:
+            print()
             name=input("Enter first name ")
             lastName=input("enter last name ")
             print(" 1 register as a  student ")
@@ -21,7 +23,10 @@ while True:
             choice2=int(input("enter choice "))
             finalName=name+lastName
             match choice2:
+                
                 case 1:
+                    print()
+                    print()
                     department=input("enter your department ")
                     branch=input("enter your branch ")
                     year=int(input("in which year your are right now "))
@@ -31,18 +36,22 @@ while True:
                     print()
                     print("THANK YOU FOR REGISTERTION ")
                 case 2:
+                    print()
                     department=input("enter your department ")
                     facultyId=int(input("enter your faculty id "))
                     print()
                     print("THANKYU FOR REGISTRATION")
                     login=True
                 case _:
+                    print()
                     print("Invalid choice please inter valid choice ")
 
         case 2:
+
             if login==False:
                 print('please register yourself first ')
             else:
+                print()
                 print("-----WELCOME-----",finalName,"i hope you are doing well")
                 print("Types of book ")
                 print("1 academic ")
@@ -52,6 +61,11 @@ while True:
                 print()
                 match choice3:
                     case 1:
+                        print()
+                        print("RENT OF BOOKS ON BASIS OF DAYS ")
+                        print(" 20 RUPPES FOR DAYS>20 ")
+                        print(" 5 ruppes for 5<=DAYS<=15")
+                        print(" FREE DAYS<2")
                         book=input("enter book name ")
                         days=int(input("enter for how many days you want to issue it "))
                         print("Book issue succesfully ")
@@ -59,6 +73,11 @@ while True:
                         issue=True
                     
                     case 2:
+                        print()
+                        print("RENT OF BOOKS ON BASIS OF DAYS ")
+                        print(" 20 RUPPES FOR DAYS>20 ")
+                        print(" 5 ruppes for 5<=DAYS<=15")
+                        print(" FREE DAYS<2")
                         book=input("enter book name ")
                         author=input('enter author name ')
                         days=int(input("enter for how many days you want to issue it "))
@@ -67,6 +86,11 @@ while True:
 
                         print("Book issue succesfully ")
                     case 3:
+                        print()
+                        print("RENT OF BOOKS ON BASIS OF DAYS ")
+                        print(" 20 RUPPES FOR DAYS>20 ")
+                        print(" 5 ruppes for 5<=DAYS<=15")
+                        print(" FREE DAYS<2")
                         book=input("enter book name ")
                         author=input("enter author name ")
                         days=int(input("enter for how many days you want to issue it "))
@@ -74,8 +98,10 @@ while True:
                         issue=True
                         print("Book issue succesfully ")
                     case _:
+                        print()
                         print("invalid choice pelase enter valid choice ")
         case 3:
+            print()
 
             if login==False:
                 print("please rigister yourself first ")
@@ -95,8 +121,10 @@ while True:
                 else:
                     print("FREE FOR READING ")
         case 4:
+            print()
             print("THANKYOU FOR YOUR TIME ")
             break
         
         case _:
+            print()
             print("invalid choice please enter valid choice ")
